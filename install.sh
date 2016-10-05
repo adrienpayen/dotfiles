@@ -27,8 +27,8 @@ fi
 PACKAGE='git git-core curl'
 
 printf "Install package ------------------------- \033[0;32m$PACKAGE\033[0m\n"
-sudo brew update
-sudo brew install $PACKAGE
+brew update
+brew install $PACKAGE
 echo ""
 printf "Test files exist ------------------------ \033[0;32m~/.gitconfig ~/.gitignore_global ~/.config/fontconfig\033[0m\n"
 if [ -f ~/.gitconfig ] ; then
